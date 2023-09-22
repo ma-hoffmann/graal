@@ -16,7 +16,7 @@
   <description>Demo project for Spring Boot</description>
   <properties>
     <java.version>17</java.version>
-    <docker-registry>docker.io/manfredhoffmann1532</docker-registry>
+    <docker-registry>docker.io/<paste-your-docker-id></docker-registry>
   </properties>
   <dependencies>
     <dependency>
@@ -64,7 +64,7 @@
         <artifactId>spring-boot-maven-plugin</artifactId>
         <configuration>
           <image>
-            <name>${docker-registry}/${project.artifactId}:${version}</name>
+            <name>${docker-registry}/${project.artifactId}:${project.version}</name>
           </image>
           <excludes>
             <exclude>
